@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-color: #00f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  background-color: white;
+  width: 56vh;
+  /* height: 90vh; */
+  border-radius: 1rem;
+  list-style: none;
+  overflow: hidden;
+  transition: 0.3s ease;
+
+  /* overflow-y: scroll; */
+}
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+  border-radius: 1rem;
+  transition: 0.4s ease;
+}
+ul li:nth-child(even) {
+  background-color: #eee8;
+}
+ul li:hover {
+  background-color: #00f2;
+  transform: scale(1.03);
+}
+ul li.active {
+  background-color: #0f03;
+  transform: scale(1.03);
+}
+ul li .friends img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+ul li .friends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+ul li .friends .friend_text h3 {
+  font-size: 1.2rem;
+}
+ul li .friends .friend_text {
+  margin: 1rem;
+}
+.icon {
+  padding: 1rem;
+  transform: rotate(180deg);
+}
+
+/* scroll bar  */
+/* ul::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 1rem;
+}
+ul::-webkit-scrollbar-track {
+  background: white;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: blue;
+}
+ul::-webkit-scrollbar-thumb:hover {
+  background: red;
+} */
